@@ -103,8 +103,8 @@ Ensure you have Git and Python 3.10+ installed on your system.
 ### 2. Clone the Repository
 Clone this repository to your local machine. If you haven't set up Git LFS, you may need to install it (`git lfs install`).
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-cd your-repo-name
+git clone https://github.com/akashwav/Fake-News-Detection.git
+cd Fake-News-Detection
 ````
 
 ### 3\. Set Up the Data (Important)
