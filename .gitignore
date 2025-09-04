@@ -1,0 +1,29 @@
+Byte-compiled / optimized / DLL files
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+Virtual environment
+This folder contains all the installed libraries and can be very large.
+Anyone using your project should create their own by using requirements.txt.
+.venv/
+venv/
+env/
+
+Jupyter Notebook checkpoints
+These are auto-saved versions of your notebooks and are not needed.
+.ipynb_checkpoints/
+
+IDE and editor configuration files
+These are specific to your computer and editor setup.
+.vscode/
+.idea/
+
+Operating System files
+For macOS users
+.DS_Store
+
+Temporary files created by some libraries
+*.swp
+*.swo

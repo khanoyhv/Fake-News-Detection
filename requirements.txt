@@ -1,0 +1,25 @@
+# requirements.txt
+
+# Core libraries for data manipulation and math
+numpy
+pandas
+scipy
+
+# Machine learning powerhouse
+scikit-learn
+
+# Natural Language Processing (NLP)
+nltk
+spacy
+
+# Data visualization
+matplotlib
+seaborn
+wordcloud
+
+# Saving/loading models and general utilities
+joblib
+python-dotenv
+
+# Web application framework
+streamlit
